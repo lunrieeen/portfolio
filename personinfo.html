@@ -1,31 +1,200 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#070b20">
-<title>Personal Info | Personal Portfolio</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#010207">
+
+    <title>Personal Info | Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/personinfo.css">
 </head>
+
 <body>
-<canvas id="space" aria-hidden="true"></canvas><div class="nebula"></div><div class="cursor-glow" id="glow"></div>
+
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="nebula"></div>
+<div class="cursor-glow" id="glow"></div>
+
 <div class="site">
-<header>
-      <a class="brand" href="index.html" aria-label="Go to homepage"><span class="brand-mark">✳</span><span>Personal Portfolio</span></a>
-      <nav id="navigation" aria-label="Main navigation"><a class="nav-link" href="index.html">Home</a><a class="nav-link active" href="personinfo.html">Personal Info</a><a class="nav-link" href="achievements.html">Achievements</a><a class="nav-link" href="acknowledgements.html">Acknowledgements</a></nav>
+
+    <header>
+        <a href="index.html" class="logo">PORTFOLIO</a>
+        <div class="header-line"></div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html" class="nav-link">HOME</a>
+            <a href="personinfo.html" class="nav-link active"
+               aria-current="page">PERSONAL INFO</a>
+            <a href="achievements.html" class="nav-link">ACHIEVEMENTS</a>
+            <a href="acknowledgements.html" class="nav-link">ACKNOWLEDGEMENTS</a>
+        </nav>
     </header>
-<main><section class="construction visible">
-      <div class="construction-inner">
-        <div class="construction-mark">✧</div>
-        <div class="eyebrow">Personal Info</div>
-        <h1>A little more about me</h1>
-        <p>This is where your personal information and extended biography can go.</p>
-        <a class="pill primary" href="index.html">Back to Home ↗</a>
-      </div>
-    </section></main>
-<footer><span>© <span id="year"></span> CHARMAINE BOGNADON </span><span>A LITTLE SPACE ON THE INTERNET ✦</span></footer>
+
+    <main class="personal-page">
+
+        <!-- PAGE INTRO -->
+        <div class="page-intro">
+            <div class="section-top">
+                <span></span>
+                PERSONAL INFORMATION
+            </div>
+
+            <h2>A little more about me.</h2>
+
+            <p>
+                A glimpse into my background, education, skills,
+                and the things that inspire me to keep learning.
+            </p>
+        </div>
+
+        <!-- MAIN INFORMATION GRID -->
+        <div class="personal-grid">
+
+            <!-- ABOUT ME -->
+            <section class="glass-card about-card">
+
+                <div class="card-heading">
+                    <span class="info-number">01 /</span>
+                    <h3>About Me</h3>
+                </div>
+
+                <div class="about-content">
+                    <span class="accent-symbol">✦</span>
+
+                    <p>
+                        I am a Data Science student at the University
+                        of the Cordilleras with an interest in
+                        programming and technology.
+                    </p>
+
+                    <p>
+                        I enjoy exploring different tools and
+                        learning new skills that allow me to
+                        develop my knowledge in technology.
+                        I look forward to discovering new ideas
+                        and challenging myself along the way.
+                    </p>
+                </div>
+
+                <span class="background-symbol">✧</span>
+
+            </section>
+
+            <!-- EDUCATION -->
+            <section class="glass-card education-card">
+
+                <div class="card-heading">
+                    <span class="info-number">02 /</span>
+                    <h3>Education</h3>
+                </div>
+
+                <div class="education-content">
+                    <span class="card-icon">⌘</span>
+
+                    <span class="card-label">CURRENT EDUCATION</span>
+
+                    <h4>University of the Cordilleras</h4>
+
+                    <p>
+                        Bachelor of Science in Data Science
+                    </p>
+
+                    <div class="education-status">
+                        <span></span>
+                        UNDERGRADUATE STUDIES
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- SKILLS -->
+            <section class="glass-card skills-card">
+
+                <div class="card-heading">
+                    <span class="info-number">03 /</span>
+                    <h3>Skills and Tools</h3>
+                </div>
+
+                <div class="skill-group">
+                    <span class="card-label">PROGRAMMING</span>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group">
+                    <span class="card-label">DESIGN AND PRODUCTIVITY</span>
+
+                    <div class="skill-tags">
+                        <span>Canva</span>
+                        <span>Wix</span>
+                        <span>Microsoft Excel</span>
+                        <span>Google Drive</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- INTERESTS -->
+            <section class="glass-card interests-card">
+
+                <div class="card-heading">
+                    <span class="info-number">04 /</span>
+                    <h3>Areas of Interest</h3>
+                </div>
+
+                <div class="interest-list">
+
+                    <div class="interest-item">
+                        <span class="interest-icon">⌘</span>
+                        <div>
+                            <h4>Data Science</h4>
+                            <p>Exploring data, analysis, and technology.</p>
+                        </div>
+                    </div>
+
+                    <div class="interest-item">
+                        <span class="interest-icon">✧</span>
+                        <div>
+                            <h4>Web Development</h4>
+                            <p>Creating functional and appealing websites.</p>
+                        </div>
+                    </div>
+
+                    <div class="interest-item">
+                        <span class="interest-icon">☾</span>
+                        <div>
+                            <h4>UI Design</h4>
+                            <p>Exploring layouts and user interfaces.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- BOTTOM NOTE -->
+        <div class="personal-bottom">
+            <span>✦</span>
+            Always learning, always exploring.
+            <span>✦</span>
+        </div>
+
+    </main>
+
 </div>
-<div class="toast" id="toast" role="status" aria-live="polite">A little wonder is on its way ✦</div>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>

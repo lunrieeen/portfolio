@@ -1,0 +1,452 @@
+
+/* ==================================================
+   PERSONAL INFO
+   ONE-SCREEN CELESTIAL LAYOUT
+================================================== */
+
+.personal-page {
+    width: 100%;
+    max-width: 1200px;
+    height: calc(100vh - 100px);
+    min-height: 0;
+    margin: 0 auto;
+    padding: 22px 4vw 14px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* ==================================================
+   INTRODUCTION
+================================================== */
+
+.page-intro {
+    flex-shrink: 0;
+    margin-bottom: 16px;
+}
+
+.page-intro .section-top {
+    font-size: 14px;
+    letter-spacing: .14em;
+}
+
+.page-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #f2f5ff;
+    margin: 12px 0 8px;
+}
+
+.page-intro p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: rgba(210, 222, 240, .65);
+    margin: 0;
+}
+
+/* ==================================================
+   MAIN GRID
+================================================== */
+
+.personal-grid {
+    display: grid;
+    grid-template-columns: 1.15fr .85fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    flex: 1;
+    min-height: 0;
+}
+
+/* ==================================================
+   GLASS CARD DESIGN
+================================================== */
+
+.personal-page .glass-card {
+    position: relative;
+    min-width: 0;
+    min-height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    padding: 15px 19px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 27, 43, .78),
+            rgba(5, 12, 23, .75)
+        );
+
+    border: 1px solid rgba(155, 232, 255, .15);
+    border-radius: 5px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .15),
+        inset 0 1px 0 rgba(255, 255, 255, .025);
+
+    transition: .3s ease;
+}
+
+.personal-page .glass-card:hover {
+    border-color: rgba(0, 225, 255, .4);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .2),
+        0 0 20px rgba(0, 225, 255, .06);
+
+    transform: translateY(-3px);
+}
+
+/* ==================================================
+   CARD HEADINGS
+================================================== */
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.info-number {
+    font-size: 14px;
+    color: var(--cyan);
+    opacity: .8;
+    white-space: nowrap;
+}
+
+.card-heading h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 400;
+    color: #edf2ff;
+    margin: 0;
+}
+
+.card-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .09em;
+    color: rgba(155, 232, 255, .65);
+    line-height: 1.4;
+}
+
+/* ==================================================
+   ABOUT ME
+================================================== */
+
+.about-card {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.about-content {
+    position: relative;
+    z-index: 1;
+    max-width: 550px;
+}
+
+.about-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: rgba(215, 225, 242, .8);
+    margin: 8px 0 10px;
+}
+
+.accent-symbol {
+    display: block;
+    font-size: 18px;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.background-symbol {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    font-size: 115px;
+    color: rgba(155, 232, 255, .035);
+    pointer-events: none;
+}
+
+/* ==================================================
+   EDUCATION
+================================================== */
+
+.education-card {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.education-content {
+    position: relative;
+}
+
+.card-icon {
+    display: block;
+    color: var(--cyan);
+    font-size: 23px;
+    margin-bottom: 9px;
+}
+
+.education-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    color: #edf2ff;
+    margin: 7px 0 5px;
+}
+
+.education-content p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(200, 215, 235, .65);
+    margin: 0;
+}
+
+.education-status {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 12px;
+
+    font-size: 11px;
+    letter-spacing: .07em;
+    color: rgba(155, 232, 255, .65);
+}
+
+.education-status span {
+    width: 7px;
+    height: 7px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 9px var(--cyan);
+}
+
+/* ==================================================
+   SKILLS
+================================================== */
+
+.skills-card {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.skill-group {
+    margin-top: 9px;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 7px;
+}
+
+.skill-tags span {
+    padding: 5px 9px;
+
+    border: 1px solid rgba(155, 232, 255, .2);
+    border-radius: 3px;
+
+    background: rgba(0, 225, 255, .035);
+    color: #c6d9ed;
+
+    font-size: 12px;
+    line-height: 1.3;
+
+    transition: .25s ease;
+}
+
+.skill-tags span:hover {
+    border-color: var(--cyan);
+    color: var(--cyan);
+    background: rgba(0, 225, 255, .08);
+    box-shadow: 0 0 12px rgba(0, 225, 255, .08);
+}
+
+/* ==================================================
+   INTERESTS
+================================================== */
+
+.interests-card {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.interest-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.interest-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.interest-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 27px;
+    height: 27px;
+    flex-shrink: 0;
+
+    color: var(--cyan);
+    border: 1px solid rgba(155, 232, 255, .18);
+    border-radius: 4px;
+
+    font-size: 15px;
+}
+
+.interest-item h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #edf2ff;
+    margin: 0 0 3px;
+}
+
+.interest-item p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(200, 215, 235, .6);
+    margin: 0;
+}
+
+/* ==================================================
+   BOTTOM MESSAGE
+================================================== */
+
+.personal-bottom {
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    margin-top: 12px;
+
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: rgba(205, 220, 240, .65);
+}
+
+.personal-bottom span {
+    color: var(--gold);
+}
+
+/* ==================================================
+   LAPTOP RESPONSIVENESS
+================================================== */
+
+@media (max-height: 750px) and (min-width: 701px) {
+
+    .personal-page {
+        padding-top: 10px;
+        padding-bottom: 8px;
+    }
+
+    .page-intro {
+        margin-bottom: 10px;
+    }
+
+    .page-intro h2 {
+        font-size: 28px;
+        margin: 7px 0;
+    }
+
+    .personal-page .glass-card {
+        padding: 12px 16px;
+    }
+
+    .card-heading {
+        margin-bottom: 8px;
+    }
+
+    .about-content p {
+        line-height: 1.45;
+        margin: 6px 0 8px;
+    }
+
+    .interest-list {
+        gap: 8px;
+    }
+
+    .personal-bottom {
+        margin-top: 6px;
+    }
+}
+
+/* ==================================================
+   TABLET AND MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .personal-page {
+        height: auto;
+        min-height: calc(100vh - 100px);
+        overflow: visible;
+        padding: 45px 6vw 35px;
+        justify-content: flex-start;
+    }
+
+    .page-intro {
+        margin-bottom: 25px;
+    }
+
+    .page-intro h2 {
+        font-size: 29px;
+    }
+
+    .personal-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        flex: none;
+    }
+
+    .about-card,
+    .education-card,
+    .skills-card,
+    .interests-card {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: auto;
+    }
+
+    .personal-page .glass-card {
+        padding: 22px;
+    }
+
+    .about-content p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .education-content p,
+    .interest-item p {
+        font-size: 12px;
+    }
+
+    .skill-tags span {
+        font-size: 12px;
+    }
+
+    .personal-bottom {
+        margin-top: 25px;
+        text-align: center;
+    }
+}
